@@ -97,10 +97,7 @@ hr {
   text-align: left;
   width: 60%;
 }
-a[ping]:link,
-:link:not(cite) {
-  color: #ffffff;
-}
+
 .container-sun p {
   margin-top: 8px;
 }
