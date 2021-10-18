@@ -176,6 +176,14 @@ hr {
 #sunset {
   font-size: 12px;
 }
+#sunrise-text {
+  font-size: 9.9px;
+  color: rgb(218, 218, 218);
+}
+#sunset-text {
+  font-size: 9.9px;
+  color: rgb(218, 218, 218);
+}
 #five-day-forecast {
   padding-right: 22px;
 }
