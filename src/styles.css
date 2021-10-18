@@ -97,7 +97,8 @@ hr {
   text-align: left;
   width: 60%;
 }
-.celsius {
+a[ping]:link,
+:link:not(cite) {
   color: #ffffff;
 }
 .container-sun p {
