@@ -26,7 +26,6 @@
   </head>
   <body>
     <div class="container">
-
       <div class="container-main">
         <form id="form">
           <input
@@ -42,14 +41,17 @@
         <h1 id="current-city"></h1>
         <p id="date"></p>
         <p id="weather-description"></p>
-        <h2><span id="current-temperature"></span>º<a href="#" id="celsius">C</a></h2>
+        <h2>
+          <span id="current-temperature"></span>º<a href="#" id="celsius">C</a>
+        </h2>
         <span class="high-low-1">
-        <p id="today-temp">
-          <strong>H: <span id="day-high"></span>º</strong>
-           | L: <span id="day-low"></span>º</p>
+          <p id="today-temp">
+            <strong>H: <span id="day-high"></span>º</strong>
+            | L: <span id="day-low"></span>º
+          </p>
         </span>
       </div>
-    
+
       <div class="container-sun">
         <div class="row">
           <div class="col-6">
@@ -64,45 +66,43 @@
       </div>
 
       <div class="row prevision-container">
-        
         <div class="col card-container">
           <div class="card">
             <div class="card-body">
               <h6>CHANCE OF RAIN</h6>
-            <p>xx%</p>
-            <hr/>
-            <h6>FEELS LIKE</h6>
-            <p><span id="feels-like"></span>º</p>
+              <p>xx%</p>
+              <hr />
+              <h6>FEELS LIKE</h6>
+              <p><span id="feels-like"></span>º</p>
             </div>
           </div>
         </div>
-        
-          <div class="col card-container">
-            <div class="card">
-              <div class="card-body">
-                <h6>HUMIDITY</h6>
-              
-                <p><span id=humidity></span>%</p>
-                <hr/>
-                <h6>UV INDEX</h6>
-                <p>x</p>
-              </div>
+
+        <div class="col card-container">
+          <div class="card">
+            <div class="card-body">
+              <h6>HUMIDITY</h6>
+
+              <p><span id="humidity"></span>%</p>
+              <hr />
+              <h6>UV INDEX</h6>
+              <p>x</p>
             </div>
           </div>
-          
-          <div class="col card-container">
-            <div class="card">
-              <div class="card-body">
-                <h6>WIND</h6>
-                <p><span id=wind-speed></span>km/h</p>
-                <hr/>
-                <h6>VISIBILITY</h6>
-                <p>xxkm</p>
-              </div>
-            </div>
-          </div>
-        
         </div>
+
+        <div class="col card-container">
+          <div class="card">
+            <div class="card-body">
+              <h6>WIND</h6>
+              <p><span id="wind-speed"></span>km/h</p>
+              <hr />
+              <h6>VISIBILITY</h6>
+              <p>xxkm</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div class="container-forecast">
         <div class="temperature">
@@ -144,7 +144,11 @@
         </div>
       </div>
     </div>
-    </div>
+    <small
+      ><a href="https://github.com/TrishaGovind/weather-app" target="_blank"
+        >Open-source code</a
+      >, by Trisha Govind</small
+    >
     <script src="src/script.js"></script>
   </body>
 </html>
