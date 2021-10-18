@@ -153,6 +153,7 @@ hr {
   text-transform: uppercase;
   font-size: 15px;
   margin: 4px;
+  color: rgb(218, 218, 218);
 }
 #current-temperature {
   letter-spacing: 2px;
@@ -160,6 +161,7 @@ hr {
 #location-id {
   padding: 8px 8px;
   font-size: 22px;
+  color: rgb(218, 218, 218);
 }
 #location-id:hover {
   cursor: pointer;
@@ -180,8 +182,12 @@ hr {
 #icons {
   padding-left: 22px;
 }
-#github-link {
+#coded-by {
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+#github-link {
+  color: rgb(218, 218, 218);
 }
