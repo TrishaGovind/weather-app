@@ -180,3 +180,8 @@ hr {
 #icons {
   padding-left: 22px;
 }
+#github-link {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
