@@ -97,6 +97,9 @@ hr {
   text-align: left;
   width: 60%;
 }
+.celsius {
+  text-decoration: none;
+}
 .container-sun p {
   margin-top: 8px;
 }
