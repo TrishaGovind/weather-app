@@ -78,3 +78,26 @@ function formatDate(date) {
 
 let currentDay = new Date();
 document.querySelector("#date").innerHTML = formatDate(currentDay);
+
+function formatTime(timestamp) {
+  let time = new Date(timestamp);
+
+  let hours = time.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let minutes = time.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+
+  return `${hours}:${minutes}`;
+}
+
+document.querySelector("#update-sunrise").innerHTML = formatTime(
+  response.data.sys.sunrise * 1000
+);
+
+document.querySelector("#update-sunset").innerHTML = formatTime(
+  response.data.sys.sunset * 1000
+);
