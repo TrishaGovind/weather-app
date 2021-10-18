@@ -29,7 +29,7 @@ function showTemp(response) {
     response.data.main.humidity
   );
   document.querySelector("#wind-speed").innerHTML = Math.round(
-    response.data.wind.speed
+    response.data.wind.speed * 3.6
   );
 }
 
