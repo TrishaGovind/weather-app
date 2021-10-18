@@ -97,7 +97,3 @@ function formatTime(timestamp) {
 document.querySelector("#update-sunrise").innerHTML = formatTime(
   response.data.sys.sunrise * 1000
 );
-
-document.querySelector("#update-sunrise").innerHTML = formatTime(
-  response.data.sys.sunset * 1000
-);
