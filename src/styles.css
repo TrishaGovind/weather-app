@@ -4,13 +4,13 @@ body {
 }
 h1 {
   text-align: center;
-  font-size: 38px;
+  font-size: 35px;
   letter-spacing: 1px;
   margin-bottom: 7px;
 }
 h2 {
   display: inline;
-  font-size: 50px;
+  font-size: 48px;
   font-weight: 600;
 }
 form {
@@ -35,7 +35,7 @@ ul {
   padding: 0;
 }
 img {
-  width: 35px;
+  width: 31px;
 }
 p {
   margin-top: 3px;
@@ -168,10 +168,10 @@ hr {
   font-size: 1rem;
 }
 #sunrise {
-  font-size: 13px;
+  font-size: 12px;
 }
 #sunset {
-  font-size: 13px;
+  font-size: 12px;
 }
 #five-day-forecast {
   padding-right: 22px;
