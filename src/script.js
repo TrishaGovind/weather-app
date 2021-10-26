@@ -1,3 +1,47 @@
+function formatDate(date) {
+  let dayIndex = date.getDay();
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[dayIndex];
+
+  let hour = date.getHours();
+  if (hour < 10) {
+    hour = `0${hour}`;
+  }
+
+  let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${date.getMinutes()}`;
+  }
+
+  return `${day}, ${hour}:${minutes}`;
+}
+
+let currentDay = new Date();
+document.querySelector("#date").innerHTML = formatDate(currentDay);
+
+function formatTime(timestamp) {
+  let time = new Date(timestamp);
+
+  let hours = time.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let minutes = time.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+
+  return `${hours}:${minutes}`;
+}
+
 function cityUpdate(event) {
   event.preventDefault();
   let apiKey = "0dc40d3d7cda209ca40e77430c74cf57";
@@ -14,7 +58,6 @@ function showTemp(response) {
   let celsiusTemperature = response.data.main.temp;
   document.querySelector("#current-temperature").innerHTML =
     Math.round(celsiusTemperature);
-
   document.querySelector("#weather-description").innerHTML =
     response.data.weather[0].description;
   document
@@ -62,50 +105,6 @@ function getCurrentPosition() {
 
 let button = document.querySelector("#location-id");
 button.addEventListener("click", getCurrentPosition);
-
-function formatDate(date) {
-  let dayIndex = date.getDay();
-  let days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
-  let day = days[dayIndex];
-
-  let hour = date.getHours();
-  if (hour < 10) {
-    hour = `0${hour}`;
-  }
-
-  let minutes = date.getMinutes();
-  if (minutes < 10) {
-    minutes = `0${date.getMinutes()}`;
-  }
-
-  return `${day}, ${hour}:${minutes}`;
-}
-
-let currentDay = new Date();
-document.querySelector("#date").innerHTML = formatDate(currentDay);
-
-function formatTime(timestamp) {
-  let time = new Date(timestamp);
-
-  let hours = time.getHours();
-  if (hours < 10) {
-    hours = `0${hours}`;
-  }
-  let minutes = time.getMinutes();
-  if (minutes < 10) {
-    minutes = `0${minutes}`;
-  }
-
-  return `${hours}:${minutes}`;
-}
 
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
