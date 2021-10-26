@@ -18,7 +18,7 @@ form {
 }
 h6 {
   font-size: 9.9px;
-  color: rgb(218, 218, 218);
+  color: rgb(177, 177, 177);
   margin: 3px 1px 0;
 }
 a {
@@ -147,7 +147,7 @@ hr {
   font-weight: 400;
 }
 .temperature-unit .active {
-  color: rgb(218, 218, 218);
+  color: rgb(177, 177, 177);
 }
 #date {
   text-align: center;
@@ -158,8 +158,9 @@ hr {
 #weather-description {
   text-transform: uppercase;
   font-size: 15px;
+  font-weight: 500;
   margin: 4px;
-  color: rgb(218, 218, 218);
+  color: rgb(177, 177, 177);
 }
 #current-temperature {
   letter-spacing: 2px;
@@ -177,12 +178,12 @@ hr {
 #sunrise-text {
   font-size: 9.9px;
   font-weight: 500;
-  color: rgb(218, 218, 218);
+  color: rgb(177, 177, 177);
 }
 #sunset-text {
   font-size: 9.9px;
   font-weight: 500;
-  color: rgb(218, 218, 218);
+  color: rgb(177, 177, 177);
 }
 #five-day-forecast {
   padding-right: 22px;
