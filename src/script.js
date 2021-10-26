@@ -99,12 +99,7 @@ function showPosition(position) {
   axios.get(apiUrl).then(showTemp);
 }
 
-function getCurrentPosition() {
-  navigator.geolocation.getCurrentPosition(showPosition);
-}
-
-let button = document.querySelector("#location-id");
-button.addEventListener("click", getCurrentPosition);
+navigator.geolocation.getCurrentPosition(showPosition);
 
 function displayFahrenheitTemperature(event) {
   event.preventDefault();

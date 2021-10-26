@@ -4,7 +4,7 @@ body {
 }
 h1 {
   text-align: center;
-  font-size: 35px;
+  font-size: 34px;
   letter-spacing: 1px;
   margin-bottom: 7px;
 }
@@ -15,7 +15,6 @@ h2 {
 }
 form {
   display: inline;
-  margin-left: 40px;
 }
 h6 {
   font-size: 9.9px;
@@ -163,15 +162,7 @@ hr {
 #current-temperature {
   letter-spacing: 2px;
 }
-#location-id {
-  padding: 8px 8px;
-  font-size: 22px;
-  color: rgb(218, 218, 218);
-}
-#location-id:hover {
-  cursor: pointer;
-  opacity: 70%;
-}
+
 #today-temp {
   font-size: 1rem;
 }
