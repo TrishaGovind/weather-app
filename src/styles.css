@@ -143,6 +143,10 @@ hr {
   padding: 0px 0 0 22px;
   line-height: 38px;
 }
+.temperature-unit {
+  font-size: 1rem;
+  font-weight: 500;
+}
 
 #date {
   text-align: center;
@@ -201,4 +205,11 @@ hr {
 }
 #link {
   color: rgb(81, 93, 121);
+}
+#today-icon {
+  width: 90px;
+  display: block;
+  text-align: center;
+  margin: auto;
+  font-size: 37px;
 }

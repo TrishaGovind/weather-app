@@ -108,18 +108,25 @@ function formatTime(timestamp) {
 
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
-  let unit = document.querySelector("#celsius");
-  if ((unit = "C")) {
-    document.querySelector("#celsius").innerHTML = "F";
-  } else {
-    document.querySelector("#celsius").innerHTML = "C";
-  }
-  let temperatureElement = "#current-temperature";
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+  let temperatureElement = document.querySelector("#temperature-unit");
   let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
+function displayCelsiusTemperature(event) {
+  event.preventDefault();
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+  let temperatureElement = document.querySelector("#temperature-unit");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
+
 let celsiusTemperature = null;
 
-let celciusLink = document.querySelector("#temperature-unit");
-celciusLink.addEventListener("click", displayFahrenheitTemperature);
+let fahrenheitLink = document.querySelector("#fahrenheit");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+
+let celsiusLink = document.querySelector("#celsius");
+celsiusLink.addEventListener("click", displayCelsiusTemperature);
