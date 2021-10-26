@@ -50,12 +50,9 @@ function cityUpdate(event) {
   axios.get(apiUrl).then(showTemp);
 }
 
-let form = document.querySelector("form");
-form.addEventListener("submit", cityUpdate);
-
 function showTemp(response) {
   document.querySelector("#current-city").innerHTML = response.data.name;
-  let celsiusTemperature = response.data.main.temp;
+  celsiusTemperature = response.data.main.temp;
   document.querySelector("#current-temperature").innerHTML =
     Math.round(celsiusTemperature);
   document.querySelector("#weather-description").innerHTML =
@@ -117,6 +114,9 @@ function displayCelsiusTemperature(event) {
   let temperatureElement = document.querySelector("#current-temperature");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
+
+let form = document.querySelector("form");
+form.addEventListener("submit", cityUpdate);
 
 let celsiusTemperature = null;
 
