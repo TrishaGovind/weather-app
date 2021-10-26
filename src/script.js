@@ -14,6 +14,7 @@ function showTemp(response) {
   let celsiusTemperature = response.data.main.temp;
   document.querySelector("#current-temperature").innerHTML =
     Math.round(celsiusTemperature);
+
   document.querySelector("#weather-description").innerHTML =
     response.data.weather[0].description;
   document
@@ -108,18 +109,18 @@ function formatTime(timestamp) {
 
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
+  let temperatureElement = document.querySelector("#current-temperature");
   celsiusLink.classList.remove("active");
   fahrenheitLink.classList.add("active");
-  let temperatureElement = document.querySelector("#temperature-unit");
-  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+  let fahrenheiTemperature = (celsiusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheiTemperature);
 }
 
 function displayCelsiusTemperature(event) {
   event.preventDefault();
   celsiusLink.classList.add("active");
   fahrenheitLink.classList.remove("active");
-  let temperatureElement = document.querySelector("#temperature-unit");
+  let temperatureElement = document.querySelector("#current-temperature");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
