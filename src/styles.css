@@ -128,8 +128,9 @@ hr {
 }
 .days ul {
   text-align: right;
-  letter-spacing: 1px;
+  letter-spacing: 1.1px;
   padding-right: 5px;
+  font-size: 13.5px;
 }
 .high-low-1 {
   text-align: center;
@@ -139,6 +140,7 @@ hr {
   text-align: center;
   letter-spacing: 3px;
   padding-left: 14px;
+  font-size: 13px;
 }
 .icon ul {
   text-align: left;
