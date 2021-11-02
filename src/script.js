@@ -51,6 +51,7 @@ function cityUpdate(event) {
 }
 
 function showTemp(response) {
+  console.log(response.data);
   document.querySelector("#current-city").innerHTML = response.data.name;
   celsiusTemperature = response.data.main.temp;
   document.querySelector("#current-temperature").innerHTML =
@@ -89,10 +90,8 @@ function showTemp(response) {
 }
 
 function getForecast(coordinates) {
-  console.log(coordinates);
   let apiKey = "0dc40d3d7cda209ca40e77430c74cf57";
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
-  console.log(apiUrl);
   axios.get(apiUrl).then(displayForecast);
 }
 
@@ -125,39 +124,63 @@ function displayCelsiusTemperature(event) {
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  return days[day];
+}
+
 function displayForecast(response) {
-  console.log(response.data.daily);
+  console.log(response.data);
+  let forecast = response.data.daily;
+
   let forecastElement = document.querySelector("#five-day-forecast");
 
   let forecastHTML = `<div class="row">`;
-  let days = ["Thursday", "Friday", "Saturday", "Sunday", "Monday"];
-  days.forEach(function (day) {
-    forecastHTML =
-      forecastHTML +
-      `
+  forecast.forEach(function (forecastDay, index) {
+    if (index < 6) {
+      forecastHTML =
+        forecastHTML +
+        `
   <div class="col-4">
   <div class="days">
     <ul>
-      <li>${day}</li>
+      <li>${formatDay(forecastDay.dt)}</li>
     </ul>
   </div>
   </div>
   <div class="col-4">
   <div class="high-low-2">
     <ul>
-      <li><strong>19º</strong> | 10º</li>
+      <li><strong><span class="weather-forecast-temp-max">${Math.round(
+        forecastDay.temp.max
+      )}º</span></strong> | <span class="weather-forecast-temp-min">${Math.round(
+          forecastDay.temp.min
+        )}º</span></li>
     </ul>
   </div>
   </div>
   <div class="col-4" id="icons">
   <div class="icon">
     <ul>
-      <li><i class="fas fa-sun"></i></li>
+      <li><img src="http://openweathermap.org/img/wn/${
+        forecastDay.weather[0].icon
+      }@2x.png"/></li>
     </ul>
   </div>
   </div>
     
   `;
+    }
   });
 
   forecastHTML = forecastHTML + `</div>`;

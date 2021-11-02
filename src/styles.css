@@ -37,7 +37,7 @@ ul {
   margin-top: 0;
 }
 img {
-  width: 31px;
+  width: 50px;
 }
 p {
   margin-top: 3px;
@@ -144,9 +144,7 @@ hr {
 }
 .icon ul {
   text-align: left;
-  font-size: 26px;
   padding: 0px 0 0 16px;
-  line-height: 38px;
 }
 .temperature-unit {
   font-size: 1rem;
