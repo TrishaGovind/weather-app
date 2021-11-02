@@ -115,6 +115,43 @@ function displayCelsiusTemperature(event) {
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#five-day-forecast");
+
+  let forecastHTML = `<div class="row">`;
+  forecastHTML =
+    forecastHTML +
+    `
+  <div class="col-4">
+  <div class="days">
+    <ul>
+      <li>Thursday</li>
+    </ul>
+  </div>
+  </div>
+  <div class="col-4">
+  <div class="high-low-2">
+    <ul>
+      <li><strong>19º</strong> | 10º</li>
+    </ul>
+  </div>
+  </div>
+  <div class="col-4" id="icons">
+  <div class="icon">
+    <ul>
+      <li><i class="fas fa-sun"></i></li>
+    </ul>
+  </div>
+  </div>
+    
+  `;
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
+displayForecast();
+
 let form = document.querySelector("form");
 form.addEventListener("submit", cityUpdate);
 
