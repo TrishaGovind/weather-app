@@ -46,6 +46,7 @@ p {
 hr {
   margin: 10px;
 }
+
 .container {
   color: #ffffff;
   display: block;
@@ -96,11 +97,9 @@ hr {
   text-align: left;
   width: 60%;
 }
-
 .container-sun p {
   margin-top: 7px;
 }
-
 .card-body {
   flex: 1 1 auto;
   padding: 1rem 0;
@@ -109,18 +108,15 @@ hr {
 .prevision-container {
   padding: 22px 10px 1px;
 }
-
 .prevision-container .col {
   padding: 0 2px;
 }
-
 .prevision-container .card {
   background-color: rgb(107 116 133);
   border-radius: 10px;
   box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.192);
   border-color: rgb(107 116 133);
 }
-
 .prevision-container .card-body {
   text-align: center;
 }
@@ -160,7 +156,6 @@ hr {
 #current-temperature {
   letter-spacing: 2px;
 }
-
 #sunrise-text {
   font-size: 12px;
   font-weight: 500;
@@ -171,22 +166,21 @@ hr {
   font-weight: 500;
   color: rgb(177, 177, 177);
 }
-
 #icons {
   padding-left: 32px;
-}
-
-#github-link {
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-#link {
-  color: rgb(81, 93, 121);
 }
 #today-icon {
   width: 100px;
   display: block;
   text-align: center;
   margin: auto;
+}
+#link {
+  color: rgb(81, 93, 121);
+}
+#github-link {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 400;
 }
