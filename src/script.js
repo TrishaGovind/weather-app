@@ -51,7 +51,6 @@ function cityUpdate(event) {
 }
 
 function showTemp(response) {
-  console.log(response.data);
   document.querySelector("#current-city").innerHTML = response.data.name;
   celsiusTemperature = response.data.main.temp;
   document.querySelector("#current-temperature").innerHTML =
@@ -64,12 +63,7 @@ function showTemp(response) {
       "src",
       `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
     );
-  document.querySelector("#day-high").innerHTML = Math.round(
-    response.data.main.temp_max
-  );
-  document.querySelector("#day-low").innerHTML = Math.round(
-    response.data.main.temp_min
-  );
+
   document.querySelector("#feels-like").innerHTML = Math.round(
     response.data.main.feels_like
   );

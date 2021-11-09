@@ -17,7 +17,7 @@ form {
   display: inline;
 }
 h6 {
-  font-size: 9.9px;
+  font-size: 12px;
   color: rgb(177, 177, 177);
   margin: 3px 1px 0;
 }
@@ -98,7 +98,7 @@ hr {
 }
 
 .container-sun p {
-  margin-top: 2px;
+  margin-top: 7px;
 }
 
 .card-body {
@@ -155,29 +155,19 @@ hr {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 500;
-  margin: 4px;
   color: rgb(177, 177, 177);
 }
 #current-temperature {
   letter-spacing: 2px;
 }
 
-#today-temp {
-  font-size: 1rem;
-}
-#sunrise {
-  font-size: 12px;
-}
-#sunset {
-  font-size: 12px;
-}
 #sunrise-text {
-  font-size: 9.9px;
+  font-size: 12px;
   font-weight: 500;
   color: rgb(177, 177, 177);
 }
 #sunset-text {
-  font-size: 9.9px;
+  font-size: 12px;
   font-weight: 500;
   color: rgb(177, 177, 177);
 }
@@ -195,9 +185,8 @@ hr {
   color: rgb(81, 93, 121);
 }
 #today-icon {
-  width: 90px;
+  width: 100px;
   display: block;
   text-align: center;
   margin: auto;
-  font-size: 37px;
 }
