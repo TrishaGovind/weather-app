@@ -144,13 +144,7 @@ hr {
   text-align: left;
   padding: 0px 0 0 16px;
 }
-.temperature-unit {
-  font-size: 1rem;
-  font-weight: 400;
-}
-.temperature-unit .active {
-  color: rgb(177, 177, 177);
-}
+
 #date {
   text-align: center;
   display: block;
