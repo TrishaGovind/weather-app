@@ -53,7 +53,7 @@ hr {
   min-width: 350px;
 }
 .container-main {
-  background-color: rgb(81, 93, 121);
+  background-color: rgb(107 116 133);
   margin: 20px auto 5px;
   text-align: center;
   border-radius: 10px;
@@ -61,7 +61,7 @@ hr {
   padding: 2px 0 14px;
 }
 .container-info {
-  background-color: rgb(81, 93, 121);
+  background-color: rgb(107 116 133);
   margin: 20px auto;
   text-align: center;
   border-radius: 10px;
@@ -71,7 +71,7 @@ hr {
   margin-bottom: -1rem;
 }
 .container-sun {
-  background-color: rgb(81, 93, 121);
+  background-color: rgb(107 116 133);
   margin: 20px auto;
   text-align: center;
   border-radius: 10px;
@@ -82,7 +82,7 @@ hr {
   font-size: 14px;
 }
 .container-forecast {
-  background-color: rgb(81, 93, 121);
+  background-color: rgb(107 116 133);
   margin: 5px auto;
   text-align: center;
   border-radius: 10px;
@@ -115,10 +115,10 @@ hr {
 }
 
 .prevision-container .card {
-  background-color: rgb(81, 93, 121);
+  background-color: rgb(107 116 133);
   border-radius: 10px;
   box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.192);
-  border-color: rgb(81, 93, 121);
+  border-color: rgb(107 116 133);
 }
 
 .prevision-container .card-body {
